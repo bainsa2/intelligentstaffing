@@ -1,4 +1,5 @@
 Intelligentstaffing::Application.routes.draw do
+
   get "welcome/index"
 
   # The priority is based upon order of creation:
@@ -14,7 +15,7 @@ Intelligentstaffing::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+   
   # Sample resource route with options:
   #   resources :products do
   #     member do
@@ -50,8 +51,11 @@ Intelligentstaffing::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
-
+  root :to => 'welcome#index'
+  
+  match '/about' => 'info#about'
+  match '/contact' => 'info#contact'
+  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
