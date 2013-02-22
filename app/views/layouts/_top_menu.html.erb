@@ -1,23 +1,28 @@
 <!-- Navbar at top -->
 
+
 <div class="container"> 
-	<div class="span10 offset1">
-		<div class="navbar navbar-inverse navbar-fixed-top">  
-			<div class="navbar-inner">  
-				<div class="container">  
+	<div class="navbar navbar-fixed-top">  
+		<div class="row navbar-inner">  
+			<div class="container">  
+				<div class="span10 offset1">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">  
 						<span class="icon-bar"></span>  
 						<span class="icon-bar"></span>  
 						<span class="icon-bar"></span>  
 					</a>
+					<%= link_to image_tag("logo.png"), "/", :class => "brand", :id => "home_link_logo"  %>
 					<div class="nav-collapse">  
 						<ul class="nav pull-right">  
-							<li><%= link_to "Home", "/", :remote => false, "data-type" => :html, :id => "home_link"  %></li>  
-							<li><%= link_to "About", "about", :remote => false, "data-type" => :html, :id => "about_link"  %></li>  
-							<li><%= link_to "Contact", "contact", :remote => false, "data-type" => :html, :id => "contact_link"  %></li>    
+							<li><%= link_to "Home", "/"%></li> 
+							<li><%= link_to "Job Seekers", "jobseekers" %></li>  
+							<li><%= link_to "Employers", "employers" %></li>    
+							<li><%= link_to "About", "about" %></li>
+							<li><%= link_to "Contact", "contact" %></li>
 						</ul>  
 					</div>
 				</div>
+			</div>
 		</div>  
 	</div>
 </div>
