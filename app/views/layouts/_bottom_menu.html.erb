@@ -1,8 +1,8 @@
 <!-- Navbar at top -->
 
 
-<div class="containermnjbvf"> 
-	<div class="navbar navbar-fixed-bottom">  
+<div class="container"> 
+	<div class="navbar navbar-fixed-bottom navbar-bottom-custom">  
 		<div class="row navbar-inner bottom-nav">  
 			<div class="container">  
 				<div class="span10 offset1">
@@ -11,12 +11,14 @@
 						<span class="icon-bar"></span>  
 						<span class="icon-bar"></span>  
 					</a>
+					<%= link_to image_tag("logo_bottom.png"), "/", :class => "brand", :id => "home_link_logo"  %>	
 					<div class="nav-collapse">  
-						<ul class="nav pull-right">  
-							<li><%= link_to "Job Seekers", "jobseekers" %></li>  
-							<li><%= link_to "Employers", "employers" %></li>    
-							<li><%= link_to "About", "about" %></li>
-							<li><%= link_to "Contact", "contact" %></li>
+						<ul class="nav list-bottom"> 
+								<%= link_to image_tag("linked_in.png"), "http://www.linkedin.com/company/2975426", :target => '_blank' %>
+								<%= link_to image_tag("twitter.png"), "https://twitter.com/intellstaffing", :target => '_blank' %>
+								<%= link_to image_tag("fb.png"), "http://www.facebook.com/pages/Intelligent-Staffing/336007413187022", :target => '_blank' %>
+								<span class="copyright" style="color:silver;">© 2013 Intelligent Staffing, All Rights Reserved | <a href="#">Privacy Policy</a></span>
+							</li>
 						</ul>  
 					</div>
 				</div>
