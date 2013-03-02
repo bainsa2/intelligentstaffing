@@ -30,8 +30,6 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 
-gem "respond-rails", "~> 1.0"
-
 group :production do
   gem 'pg', '0.12.2'
 end

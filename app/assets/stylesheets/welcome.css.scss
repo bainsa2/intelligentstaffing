@@ -2,11 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.top-nav {
-  background-color: #1b1b1b; /* background color will be black for all browsers */
-  background-image: none;
-  background-repeat: no-repeat;
-  filter: none;
+
+span.copyright {
+  margin-top: 10px;
+  margin-left: 25px;
+  color: silver;
+  display: inline-block;
+}
+
+#navigation li 
+  {
+    display:inline-block;
+    list-style: none;
+  }
+#navigation li a, #navigation li span a
+  {
+    display: block;
+    padding: 0px 0px 0px 3px;
+    float: left;
+    margin: 10px 0 0 0;
+  }
+
+
+.navbar .nav,
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+ .navbar-inner {
+    text-align:center;
 }
 
 .navbar-top-custom {
@@ -14,7 +51,7 @@
 }
 
 .navbar-top-custom .nav > li > a {
-  padding-top:53px;
+  padding-top:40px;
 }
 
 .navbar-bottom-custom {
@@ -32,9 +69,6 @@
   filter: none;
 }
 
-.copyright {
-  padding-left:20px;
-}
 
 .btn-custom {
   background-color: hsl(119, 100%, 22%) !important;
